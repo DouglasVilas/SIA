@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pop-up em uma imagem no hover</title>
+  <style>
+    .image-container {
+      position: relative;
+      display: inline-block;
+    }
+
+    .image-container:hover .popup {
+      display: block;
+    }
+
+    .popup {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 100%;
+      width: 200px;
+      padding: 10px;
+      background-color: #ffffff;
+      border: 1px solid #000000;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="image-container">
+    <img src="caminho_da_imagem.jpg" alt="Imagem" />
+
+    <div class="popup">
+      <p>Conteúdo do pop-up</p>
+    </div>
+  </div>
+
+  <script>
+    const imageContainer = document.querySelector('.image-container');
+    const popup = document.querySelector('.popup');
+
+    imageContainer.addEventListener('mouseover', function() {
+      popup.style.display = 'block';
+    });
+
+    imageContainer.addEventListener('mouseout', function() {
+      popup.style.display = 'none';
+    });
+  </script>
+</body>
+</html>

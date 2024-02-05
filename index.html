@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SIA</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	
+</head>
+
+	<body>
+ <!--inicio  do site --> 
+					
+					
+					<div id="menusuperior">
+					<h1> ATM MANUTENÇÃO </h1>
+					  	<p>V 0.0.0.2</p>
+					</div>
+					<ul id="barralateral">
+						
+						<div id="imgTema">
+					
+							<li>
+							<img src="IMAGENS/modo-escuro.png" alt="1" onclick="click()">
+							<div class="popup">
+							<p>TEMA</p>
+							</div>
+							
+							<div class="popUpModo">
+								<div class="popUpEdit">
+								<div class="popupClose"> X </div>
+								<div class="popUpConteudo">
+									<P>ESCOLHE UMA OPÇÃO PARA ATIVAR O MODO DESEJÁVEL:</P>
+									<label>
+										<input type="radio" name="theme" value="dark"> Modo Escuro
+									  </label>
+									  <label>
+										<input type="radio" name="theme" value="light"> Modo Claro
+									 </label>
+								
+									<div class="button"><button onclick="aplicarSelecao()">OK</button></div>
+
+								</div>
+								</div>
+								</div>
+							</div>
+						</li>
+						<li>
+					
+							<img src="IMAGENS/pesquisa.png" onclick="exibirAlerta()">
+							<div class="popup">
+							<p>PESQUISA</p>
+							</div>
+						</li>
+						<li>
+							<img src="IMAGENS/dashboards.png" onclick="exibirAlerta()">
+							<div class="popup">
+							<p>DASHBOARDS</p>
+							</div>
+						</li>
+						<li>	
+							<img src="IMAGENS/suporte.png" onclick="exibirAlerta()">
+							<div class="popup">
+							<p>SUPORTE</p>
+							</div>
+						
+						</li>
+						<li>
+							<a href="ajuda.html" target="_blank">
+							<img src="IMAGENS/ajuda.png">
+							<div class="popup">
+							</a>
+							<p>AJUDA</p>
+							</div>
+						
+						</li>
+					</ul>
+	<div id="container">
+		
+
+					<div id="conteudo"> 
+		
+ 					
+					<div id="primario"> 
+								
+							<div class="caixatotal">
+								<h1>  TOTAL | SPRINT</h1>
+								<P>TOTAL DE PEDIDOS:03<br>
+								R5 PRO:03<br>
+								APARELHOS DE MERCADO:00<br>
+								SIMCARDS:03<br>
+								ACESSÓRIOS:00<br>
+								</P>	
+								</div>	
+
+											
+							
+
+						<div class="caixayellow">
+									<h1>  SPRINT | 05 - 10 DIAS</h1>
+									<span><P>TOTAL DE PEDIDOS:02<br>
+									R5 PRO:02<br>
+									APARELHOS DE MERCADO:00<br>
+									SIMCARDS:03<br>
+									ACESSÓRIOS:00<br>
+									
+									</P></span>
+
+									<div class="caixa-conteudo">
+									
+									<div class="coloryellow">
+			
+									<a href="">
+									<P>
+									<h2>Nº:18600 | 10 DIAS</h2>
+									<img src="IMAGENS/3 pontos.png">
+									<div id='adicionar'>
+									<img src="IMAGENS/adicionar.png">
+									</div>
+									</P>
+									<h3 style="background:#565656"> RETORNO DE MANUTENÇÃO</h3> <br>								
+									
+									
+									<span>EMPRESA:</span>PDV <br>
+									<span>PROJETO:</span>PRONTO <br>
+									<span>CNPJ:</span>12.654.548/0001/65 <br>
+									<span>CONTATO:</span>CARLOS EDUARDO SILVA <br>
+									<span>SOLICITADO POR:</span> FELIPE ZACHARIAS<br>
+									<span>R5 PRO:</span>1 <br>
+									<span>ENDERENÇO:</span>RUA VICENDE, 456, APT 24-JARDIM  COSTA -FRUTAL/MG -38.248-762<br>
+									<img src="IMAGENS/PERFIL.PNG">
+								
+										</a>
+									</div>
+
+									</div>
+							<div class="caixa-conteudo">
+									
+									<div class="coloryellow">
+			
+									<a href="">
+									<P>
+									<h2>Nº:18608 | 05 DIAS </h2>
+									<img src="IMAGENS/3 pontos.png">
+									<div id='adicionar'>
+									<img src="IMAGENS/adicionar.png">
+									</div>
+									</P>
+									 <h3 style="background:blue"> RENOVAÇÃO</h3> <br>						
+									
+											
+									<span>EMPRESA:</span>PDV <br>
+									<span>PROJETO:</span>PRONTO <br>
+									<span>CNPJ:</span>12.654.548/0001/65 <br>
+									<span>CONTATO:</span>CARLOS EDUARDO SILVA <br>
+									<span>SOLICITADO POR:</span> FELIPE ZACHARIAS<br>
+									<span>R5 PRO:</span>1 <br>
+									<span>CHIP:</span>03 <br>
+
+									<span>ENDERENÇO:</span>RUA VICENDE, 456, APT 24-JARDIM  COSTA -FRUTAL/MG -38.248-762<br>
+									<img src="IMAGENS/PERFIL.PNG">
+									</P>
+										</a>
+									</div>
+
+									</div>
+					
+										
+					</div> 
+
+					<div class="caixagreen">
+
+									<h1>  SPRINT | 00 - 05 DIAS</h1>
+									<span><P>TOTAL DE PEDIDOS:01<br>
+									R5 PRO:01<br>
+									APARELHOS DE MERCADO:00<br>
+									SIMCARDS:00<br>
+									ACESSÓRIOS:00<br>
+								</P></span>
+								
+									</P>	
+
+							
+								<div class="caixa-conteudo">
+									
+									<div class="colorgreen">
+			
+									<a href="">
+									<P>
+									<h2>Nº:18710 | 02 DIAS</h2>
+									<img src="IMAGENS/3 pontos.png">
+									<div id='adicionar'>
+									<img src="IMAGENS/adicionar.png">
+									</div>
+									</P>
+									<h3 style="background:PINK"> TROCA NA FRENTE</h3> <BR>							
+									
+											
+									<span>EMPRESA:</span>PDV <br>
+									<span>PROJETO:</span>PRONTO <br>
+									<span>CNPJ:</span>12.654.548/0001/65 <br>
+									<span>CONTATO:</span>CARLOS EDUARDO SILVA <br>
+									<span>SOLICITADO POR:</span> FELIPE ZACHARIAS<br>
+									<span>R5 PRO:</span>1 <br>
+									<span>ENDERENÇO:</span>RUA VICENDE, 456, APT 24-JARDIM  COSTA -FRUTAL/MG -38.248-762<br>
+									<img src="IMAGENS/PERFIL.PNG">
+									</P>
+										</a>
+									</div>
+								</div>
+							</div>
+					
+					    	</div>						
+					    
+                         
+
+						<div id="secundario">
+							
+						
+													<div class="caixatotal">
+													<h1>  TOTAL | ATENDIMENTOS </h1>
+													<P>TOTAL DE PEDIDOS:2<br>
+													R5 PRO:16<br>
+													APARELHOS DE MERCADO:00<br>
+													SIMCARDS:00<br>
+													ACESSÓRIOS:10<br>
+													</P>	
+													</div>	
+									<div class="caixared">
+									<h1>  ANTENDIMENTOS | 10 - 15 DIAS</h1>
+									<span><P>TOTAL DE PEDIDOS:01<br>
+									R5 PRO:00<br>
+									APARELHOS DE MERCADO:00<br>
+									SIMCARDS:00<br>
+									ACESSÓRIOS:10<br>
+								
+									</P></span>
+									
+									<div class="caixa-conteudo">
+									
+									<div class="colorred">
+			
+									<a href="">
+									<P>
+									<h2>Nº:18000 | 14 DIAS</h2>
+									<img src="IMAGENS/3 pontos.png">
+									<div id='adicionar'>
+									<img src="IMAGENS/adicionar.png">
+									</div>
+									</P>
+									<h3 style="background:yellowgreen;"> ACESSÓRIOS</h3><br>						
+									
+											
+									<span>EMPRESA:</span>PDV <br>
+									<span>PROJETO:</span>PRONTO <br>
+									<span>CNPJ:</span>12.654.548/0001/65 <br>
+									<span>CONTATO:</span>CARLOS EDUARDO SILVA <br>
+									<span>SOLICITADO POR:</span> FELIPE ZACHARIAS<br>
+									<span>ACESSÓRIOS:</span>10 <br>
+
+									<span>ENDERENÇO:</span>RUA VICENDE, 456, APT 24-JARDIM  COSTA -FRUTAL/MG -38.248-762<br>
+									<img src="IMAGENS/PERFIL.PNG">
+									</P>
+										</a>
+									</div>
+
+								
+
+</div>
+
+</div> 
+				 
+
+						<div class="caixagreen">
+
+									<h1>  ATENDIMENTOS | 00 - 05 DIAS</h1>
+									<span><P>TOTAL DE PEDIDOS:01<br>
+									R5 PRO:16<br>
+									APARELHOS DE MERCADO:00<br>
+									SIMCARDS:00<br>
+									ACESSÓRIOS:00<br>
+								</P></span>
+								
+									</P>	
+
+							
+								<div class="caixa-conteudo">
+									
+									<div class="colorgreen">
+			
+									<a href="" >
+									<P>
+									<h2>Nº:18810 | 05 DIAS</h2>
+									<img src="IMAGENS/3 pontos.png">
+									<div id='adicionar'>
+									<img src="IMAGENS/adicionar.png">
+									</div>
+									</P>
+									 <h3 style="background:blue"> RENOVAÇÃO</h3> <h3 style="background:green">NOVOS ITENS</h3>								
+									
+											
+									<span>EMPRESA:</span>PDV <br>
+									<span>PROJETO:</span>PRONTO <br>
+									<span>CNPJ:</span>12.654.548/0001/65 <br>
+									<span>CONTATO:</span>CARLOS EDUARDO SILVA <br>
+									<span>SOLICITADO POR:</span> FELIPE ZACHARIAS<br>
+									<span>R5 PRO:</span>16 <br>
+									<span>ENDERENÇO:</span>RUA VICENDE, 456, APT 24-JARDIM  COSTA -FRUTAL/MG -38.248-762<br>
+									<img src="IMAGENS/PERFIL.PNG">
+									</P>
+										</a>
+									</div>
+								</div>
+						</div>
+
+						</div>
+							
+
+
+
+						<div id="lateral"><!--inicio do conteudo lateral -->
+												
+
+													<div class="caixatotal">
+													<h1>  TOTAL | BACKLOG</h1>
+													<P>TOTAL DE PEDIDOS:06<br>
+													R5 PRO:30<br>
+													APARELHOS DE MERCADO:01<br>
+													SIMCARDS:35<br>
+													ACESSÓRIOS:01<br>
+													</P>	
+													</div>	
+
+							<div class="caixagreen">
+
+									<h1>  BACKLOG | 00 - 05 DIAS</h1>
+									<span><P>TOTAL DE PEDIDOS:03<br>
+									R5 PRO:15<br>
+									APARELHOS DE MERCADO:00<br>
+									SIMCARDS:15<br>
+									ACESSÓRIOS:00<br>
+
+								</P></span>
+								
+									</P>	
+
+							
+								<div class="caixa-conteudo">
+									
+									<div class="colorgreen">
+			
+									<a href="" >
+									<P>
+									<h2>Nº:18575 | 03 DIAS </h2>
+									<img src="IMAGENS/3 pontos.png">
+									<div id='adicionar'>
+									<img src="IMAGENS/adicionar.png">
+									</div>
+									</P>
+									<h3 style="background:red"> ATIVO</h3> <h3 style="background:blue"> RENOVAÇÃO</h3> <h3 style="background:green">NOVOS ITENS</h3>								
+									
+											
+									<span>EMPRESA:</span>PDV <br>
+									<span>PROJETO:</span>PRONTO <br>
+									<span>CNPJ:</span>12.654.548/0001/65 <br>
+									<span>CONTATO:</span>CARLOS EDUARDO SILVA <br>
+									<span>SOLICITADO POR:</span> FELIPE ZACHARIAS<br>
+									<span>R5 PRO:</span>5 <br>
+									<span>CHIP:</span>15 <br>
+
+									<span>ENDERENÇO:</span>RUA VICENDE, 456, APT 24-JARDIM  COSTA -FRUTAL/MG -38.248-762<br>
+									<img src="IMAGENS/PERFIL.PNG">
+									</P>
+										</a>
+									</div>
+								</div>
+								<div class="caixa-conteudo">
+									
+									<div class="colorgreen">
+			
+									<a href="">
+									<P>
+									<h2>Nº:18576 | 02 DIAS</h2>
+									<img src="IMAGENS/3 pontos.png">
+									<div id='adicionar'>
+									<img src="IMAGENS/adicionar.png">
+									</div>
+									</P>
+									<h3 style="background:red"> ATIVO</h3> <h3 style="background:blue"> RENOVAÇÃO</h3><br>							
+									
+											
+									<span>EMPRESA:</span>PDV <br>
+									<span>PROJETO:</span>PRONTO <br>
+									<span>CNPJ:</span>12.654.548/0001/65 <br>
+									<span>CONTATO:</span>CARLOS EDUARDO SILVA <br>
+									<span>SOLICITADO POR:</span> FELIPE ZACHARIAS<br>
+									<span>R5 PRO:</span>5 <br>
+									<span>ENDERENÇO:</span>RUA VICENDE, 456, APT 24-JARDIM  COSTA -FRUTAL/MG -38.248-762<br>
+									<img src="IMAGENS/PERFIL.PNG">
+									</P>
+										</a>
+									</div>
+
+									</div>
+									<div class="caixa-conteudo">
+									
+									<div class="colorgreen">
+			
+									<a href="">
+									<P>
+									<h2>Nº:18577 | 01 DIA</h2>
+									<img src="IMAGENS/3 pontos.png">
+									<div id='adicionar'>
+									<img src="IMAGENS/adicionar.png">
+									</div>
+									</P>
+									<h3 style="background:red"> ATIVO</h3> <br>							
+									
+											
+									<span>EMPRESA:</span>PDV <br>
+									<span>PROJETO:</span>PRONTO <br>
+									<span>CNPJ:</span>12.654.548/0001/65 <br>
+									<span>CONTATO:</span>CARLOS EDUARDO SILVA <br>
+									<span>SOLICITADO POR:</span> FELIPE ZACHARIAS<br>
+									<span>R5 PRO:</span>5 <br>
+									<span>ENDERENÇO:</span>RUA VICENDE, 456, APT 24-JARDIM  COSTA -FRUTAL/MG -38.248-762<br>
+									<img src="IMAGENS/PERFIL.PNG">
+									</P>
+										</a>
+									</div>
+
+									</div>
+													
+									
+				 			</div>
+
+						<div class="caixayellow">
+									<h1>  BACKLOG | 05 - 10 DIAS</h1>
+									<span><P>TOTAL DE PEDIDOS:02<br>
+									R5 PRO:05<br>
+									APARELHOS DE MERCADO:01<br>
+									SIMCARDS:05<br>
+									ACESSÓRIOS:01<br>
+									
+									</P></span>
+
+									<div class="caixa-conteudo">
+									
+									<div class="coloryellow">
+			
+									<a href="">
+									<P>
+									<h2>Nº:18578 | 09 DIAS</h2>
+									<img src="IMAGENS/3 pontos.png">
+									<div id='adicionar'>
+									<img src="IMAGENS/adicionar.png">
+									</div>
+									</P>
+									<h3 style="background:red"> ATIVO</h3> <h3 style="background:blue"> RENOVAÇÃO</h3> <h3 style="background:rgb(138, 233, 138)">NOVOS ITENS</h3>								
+									
+											
+									<span>EMPRESA:</span>PDV <br>
+									<span>PROJETO:</span>PRONTO <br>
+									<span>CNPJ:</span>12.654.548/0001/65 <br>
+									<span>CONTATO:</span>CARLOS EDUARDO SILVA <br>
+									<span>SOLICITADO POR:</span> FELIPE ZACHARIAS<br>
+									<span>R5 PRO:</span>03 <br>
+									<span>CHIP:</span>05 <br>
+									<span>ENDERENÇO:</span>RUA VICENDE, 456, APT 24-JARDIM  COSTA -FRUTAL/MG -38.248-762<br>
+									<img src="IMAGENS/PERFIL.PNG">
+									</P>
+										</a>
+									</div>
+
+									</div>
+							<div class="caixa-conteudo">
+									
+									<div class="coloryellow">
+			
+									<a href="">
+									<P>
+									<h2>Nº:18579 | 05 DIAS</h2>
+									<img src="IMAGENS/3 pontos.png">
+									<div id='adicionar'>
+									<img src="IMAGENS/adicionar.png">
+									</div>
+									</P>
+									<h3 style="background:red"> ATIVO</h3> <h3 style="background:blue"> RENOVAÇÃO</h3> <h3 style="background:green">NOVOS ITENS</h3>								
+									
+											
+									<span>EMPRESA:</span>PDV <br>
+									<span>PROJETO:</span>PRONTO <br>
+									<span>CNPJ:</span>12.654.548/0001/65 <br>
+									<span>CONTATO:</span>CARLOS EDUARDO SILVA <br>
+									<span>SOLICITADO POR:</span> FELIPE ZACHARIAS<br>
+									<span>R5 PRO:</span>02 <br>
+									<span>ACESSÓRIOS:</span>01 <br>
+									<span>APARELHO DE MERCADO:</span>01 <br>
+
+									<span>ENDERENÇO:</span>RUA VICENDE, 456, APT 24-JARDIM  COSTA -FRUTAL/MG -38.248-762<br>
+									<img src="IMAGENS/PERFIL.PNG">
+									</P>
+										</a>
+									</div>
+
+									</div>
+					
+										
+					</div> 
+
+					<div class="caixared">
+									<h1>  BACKLOG | 10 - 15 DIAS</h1>
+									<span><P>TOTAL DE PEDIDOS:01<br>
+									R5 PRO:01<br>
+										APARELHOS DE MERCADO:00<br>
+									SIMCARDS:15<br>
+									ACESSÓRIOS:0<br>
+								
+									</P></span>
+									
+									<div class="caixa-conteudo">
+									
+									<div class="colorred">
+			
+									<a href="">
+									<P>
+									<h2>Nº:18580 | 14 DIAS</h2>
+									<img src="IMAGENS/3 pontos.png">
+									<div id='adicionar'>
+									<img src="IMAGENS/adicionar.png">
+									</div>
+									</P>
+									 <h3 style="background:blue"> RENOVAÇÃO</h3> <h3 style="background:green">NOVOS ITENS</h3>	<br>							
+									
+											
+									<span>EMPRESA:</span>PDV <br>
+									<span>PROJETO:</span>PRONTO <br>
+									<span>CNPJ:</span>12.654.548/0001/65 <br>
+									<span>CONTATO:</span>CARLOS EDUARDO SILVA <br>
+									<span>SOLICITADO POR:</span> FELIPE ZACHARIAS<br>
+									<span>R5 PRO:</span>1 <br>
+									<span>CHIP:</span>15 <br>
+									<span>ENDERENÇO:</span>RUA VICENDE, 456, APT 24-JARDIM  COSTA -FRUTAL/MG -38.248-762<br>
+									<img src="IMAGENS/PERFIL.PNG">
+									</P>
+										</a>
+									</div>
+
+									</div>
+
+					</div>
+
+</div> 
+
+						</div>
+ </div> <!-- Fim container -->
+			
+
+			 	<div id="container-rodape" style="clear:both;"><!--serve para remover do fluxo flutuante -->
+			 		
+			 		<div id="rodape">
+			 			&copy; SIA 2024
+			 		
+					 </div>
+			    
+			    </div>
+			
+<script src="script.js" ></script>
+		</body>
+</html>

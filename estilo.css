@@ -1,0 +1,406 @@
+/*limpando formatações padrão*/
+
+* {
+	margin: 0;
+	padding: 0;
+
+}
+/*aplicando estilos para as imagens*/
+
+:root {
+
+	--text-color: #ffffff;
+    --background-color:#ffffff ;
+	--background-lateral:#294c71;
+	--text-popup: black;
+	--caixa-total: #c0c0c0;
+}
+
+
+.dark{
+	--text-color:black;
+    --background-color:#000000;
+	--background-lateral:#00ffff;
+	--text-popup: white;
+	--caixa-total: #565656;
+}
+body{
+
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: var(--background-color);
+	
+}
+/*editando os h2 dos pedidos*/
+
+.dark .caixa-conteudo h2{
+	color: white;
+}
+
+
+#container{
+
+	margin: 0 auto;
+	width:800px;
+	margin-top: 10px;
+	display: flex;
+}
+#container a{
+	color:var(--text-popup);
+}
+
+	
+
+	/*lista lateral*/
+#barralateral{
+	width: 50px;
+	height: 120%;
+	background:var(--background-lateral);
+	position: absolute;
+	
+	}
+
+#barralateral img {
+	width: 30px;
+	height:30px;
+	cursor: pointer;
+	display: block;
+    padding: 10px 0;
+	margin-left: 10px;
+	margin-bottom: 20px;
+	
+}
+#barralateral li {
+	position: relative;
+}
+
+#barralateral li.hover .popup{
+	display: block;
+
+}
+/*editando o popup do modo escuro*/
+
+
+button{
+	background: green;
+	color: white;
+	border: 0;
+	cursor: pointer;
+	padding: 4px 6px;
+	margin-top: 20px;
+
+
+}
+label {
+	margin-top: 10px;
+	display: flex;
+	justify-content:center;
+
+	
+  }
+
+.popUpModo{
+	display:none ;
+	background:rgba(0, 0, 0, 0.5) ;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+.popUpEdit{
+	width: 100%;
+	height: 20%;
+	max-width:300px ;
+	max-height:300px ;
+	text-align: center;
+	margin: 10% auto;
+	background: var(--background-color);
+	position: relative;
+	color:var(--text-popup);
+
+
+}
+.popUpConteudo {
+	margin-top: 40px;
+	position: absolute;	
+}
+
+.popupClose{
+	position: absolute;
+	top: 2px;
+	right: 8px;
+	cursor: pointer;
+}
+
+
+/*editando o pou-up */
+.popup {
+	display: none;
+	position:absolute;
+	left: 100%;
+	width: 80px;
+	padding: 15px;
+	background-color:var(--background-lateral) ;
+	border: 3px solid var(--text-color);
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	color: var(--text-color);
+	text-align: center;
+	top:0;
+
+ 
+
+  }
+
+#menusuperior{
+
+		font-size: 1em;
+		background: var(--background-lateral);
+		color: var(--text-color);
+		padding: 10px;
+		text-align: center;
+		top: 0; 
+		left: 0; 
+		width: 100%;
+		height: 40px;  
+		position: relative;
+	
+	} 
+
+
+ /*Configurando layout de três colunas */
+#conteudo {
+	
+	margin-top: 10px;
+	
+/*formatado as colunas padrao */
+}
+
+
+#primario{
+	width: 250px;
+	float: left;
+	margin: 0 0 20px 260px;
+	overflow: auto;
+	overflow-x:hidden;
+	max-height:750px;
+	max-width: auto;
+}
+
+#secundario {
+
+	width: 250px;
+	float: left;
+	margin: 0 0 20px 25px;
+	overflow: auto;
+	overflow-x:hidden;
+	max-height:750px;
+	max-width: auto;
+}
+
+#lateral {
+	width: 250px;
+	float: left;
+	margin: 0 0 20px -800px ;
+	overflow: auto;
+	overflow-x:hidden;
+	max-height:750px;
+	max-width: auto;
+}
+
+
+
+ h1 {
+	font-size: 1em;
+	background:var(--background-lateral);
+	color: var(--text-color);
+	padding: 5px;
+	text-align: center;
+margin: auto;
+}
+h3{
+font-size: 0.8em;
+color: white;
+padding: 4px;
+display: inline-block;
+margin: 0px 0px 6px 10px;
+border-radius: 6px;
+
+}
+
+
+.caixagreen h2{
+
+	font-size: 1em;
+	background:#007d00 ;
+	color: black;
+	padding: 5px;
+	text-align: center;
+
+}
+.colorgreen:hover {
+	background:#007d00;
+	
+	
+
+}
+.coloryellow:hover  {
+	background:#eead2d;
+}
+
+.caixayellow h2{
+
+	font-size: 1em;
+	background:#eead2d ;
+	color: black;
+	padding: 5px;
+	text-align: center;
+
+}
+
+.caixared h2{
+
+	font-size: 1em;
+	background:#ff4040 ;
+	color: black;
+	padding: 5px;
+	text-align: center;
+
+}
+.colorred:hover {
+	background-color:#ff4040;
+	color:#6f0000;
+	}
+
+
+/*editando as caixas */
+.caixagreen {
+
+margin: 10px 0;
+padding: 5px 5px 5px 5px;
+background: #007d00;
+
+
+}
+.caixatotal {
+
+margin: 10px 0;
+padding: 5px 5px 5px 5px;
+background: var(--caixa-total)
+
+
+}
+.caixatotal p {
+
+	color:var(--text-popup)
+}
+
+
+.caixayellow {
+
+margin: 10px 0;
+padding: 5px 5px 5px 5px;
+background: #eead2d;
+cursor: pointer;
+
+}
+
+.caixared {
+
+margin: 10px 0;
+padding: 5px 5px 5px 5px;
+background:#ff4040;
+}
+
+
+.caixa-conteudo{
+	background:var(--background-color) ; 
+	padding: 5px;
+	margin-top: 5px;
+	font-size: 0.7em;
+}
+#container span p{
+	color:var(--text-color);
+}
+
+
+p {
+
+	font-size: 0.8em;
+
+}
+span {
+	font-weight: bold;
+	color: var(--text-popup);
+}
+
+ img {
+ 	width: 20px;
+ 	margin: 0px 30px 0px 190px;
+ }
+
+#adicionar img{
+	width: 20px;
+	 margin: 0px 0px 0px 0;
+	 margin-top: 0;
+}
+ 
+
+
+ img:hover {
+ 	cursor: pointer;
+ }
+
+
+
+/*formatando a 1 coluna*/
+#primario-coluna1{
+width: 290px;
+float: left;
+
+}
+
+
+/*fomatando 2 coluna*/
+#secundario-coluna2{
+
+	width: 270px;
+
+
+}
+
+
+
+a{
+	text-decoration: none;
+
+}
+
+
+
+/*rodape */
+#container-rodape{
+	background:var(--background-lateral);
+	padding: 20px;
+	
+}
+
+#rodape{
+	width: 750px;
+	margin: 0 auto;
+	color:var(--text-color);
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+	
